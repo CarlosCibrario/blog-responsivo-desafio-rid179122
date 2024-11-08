@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #02A28F;
+    color: #fff;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    margin-left: 1.25em;
+}
+
+.header-container {
+    max-width: 62.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 19em;
+}
+
+.content {
+    display: flex;
+    max-width: 62.5em;
+    padding: 1em;
+    gap: 1em;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    padding-top: 1.25em;
+}
+
+#posts-populares {
+    background-color: #02A28F;
+    color: #fff;
+    border-radius: 0.5em;
+    padding-left: 0.625em;
+    margin-top: 0.625em;
+    height: 2em;
+    padding-top: 0.8em;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex: 1;
+}
+
+.post-list > div h3 {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    border: 0.063em solid #ddd;
+    border-radius: 0.5em;
+}
+
+.post-item img {
+    width: 3.75em;
+    height: 3.75em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-item h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-item p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0.313em 0 0;
+}
+
+.recent-posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 37.5em;
+    margin-bottom: 1em;
+    background-color: #02A28F;
+    color: #fff;
+    border-radius: 0.5em;
+}
+
+.recent-posts-header > h3 {
+    margin-left: 0.625em;
+}
+
+.view-all {
+    color: #fff;
+    margin-right: 0.625em;
+}
+
+.categories-section {
+    margin-left: 1.563em;
+    width: 21.25em;
+    margin-top: 0.5em;
+}
+
+.categories-section h3 {
+    margin: 0;
+    margin-bottom: 0.5em;
+    background-color: #02A28F;
+    color: #fff;
+    border-radius: 0.5em;
+    padding-left: 0.625em;
+    height: 1.875em;
+    padding-top: 0.625em;
+    margin-bottom: 0.625em;
+}
+
+.categories {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.categories li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.25em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
+.categories li span {
+    min-width: 2.5em;
+    text-align: right;
+}
+
+.recent-posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    width: 37.5em;
+    margin-bottom: 2em;
+}
+
+.post-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.post-card {
+    border: 0.031em solid white;
+    border-radius: 0.5em;
+    padding: 1em;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 21.875em;
+}
+
+.post-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.313em;
+}
+
+.post-card .tag {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 0.188em;
+}
+
+.post-card h4 {
+    margin: 0.188em 0;
+}
+
+.post-card .author,
+.post-card .date {
+    font-size: 0.8em;
+    color: #777;
+}
+
+footer {
+    background-color: #02A28F;
+    color: #fff;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.footer-container {
+    max-width: 62.5em;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        width: 100%;
+        margin-top: 1em;
+        background-color: #02A28F;
+        color: white;
+        border-radius: 0.5em;
+    }
+
+    .header-container {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 0.5em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-container img {
+        padding-top: 0.5em;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .recent-posts-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+        width: 100%;
+        margin-top: 1em;
+        background-color: #02A28F;
+        color: white;
+        border-radius: 0.5em;
+        gap: 0.5em;
+    }
+
+    .recent-posts-header h3 {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1em;
+    }
+
+    .view-all {
+        color: #fff;
+        margin-right: 0;
+        font-size: 0.9em;
+    }
+
+    .recent-posts {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-bottom: 1em;
+        justify-items: center;
+    }
+
+    .post-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #posts-populares {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        width: 100%;
+        margin-top: 1em;
+        background-color: #02A28F;
+        color: white;
+        border-radius: 0.5em;
+    }
+
+    .post-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .post-card {
+        min-height: auto;
+        padding: 1em;
+        margin: 0 auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        width: 100%;
+        margin-top: 1em;
+        background-color: #02A28F;
+        color: white;
+        border-radius: 0.5em;
+    }
+
+    .categories-section {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 0.5em;
+        margin-top: 1em;
+    }
+
+    #categories-section-h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        width: 100%;
+        margin-top: 1em;
+        background-color: #02A28F;
+        color: white;
+        border-radius: 0.5em;
+    }
+
+    .categories {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categories li {
+        width: 90%;
+        height: auto;
+        font-size: 0.9em;
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+
+    .categories li span {
+        min-width: 2.5em;
+        text-align: right;
+    }
+}
+
+
+
+
